@@ -10,6 +10,9 @@ public class PlayerDeath implements Listener {
 
     @EventHandler
     public void onPlayerDeath(PlayerDeathEvent event) {
+        // when a player dies, check if they are part of the active game
+        // if the player is in the active game, then the other player wins
+
         Game activeGame = DeathSwap.getInstance().activeGame;
         if (activeGame != null) {
             if (activeGame.getPlayer1() == event.getEntity()) {
