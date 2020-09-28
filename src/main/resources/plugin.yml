@@ -1,0 +1,10 @@
+name: DeathSwap
+version: ${project.version}
+main: me.thecarso.deathswap.DeathSwap
+api-version: 1.16
+authors: [ Wqtch ]
+description: DeathSwap for theCarso
+commands:
+  ds:
+    description: deathswap command
+    aliases: [deathswap]
